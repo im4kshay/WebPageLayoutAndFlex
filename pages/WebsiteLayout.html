@@ -1,0 +1,63 @@
+<!doctype html>
+<title>WebsiteLayout</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 10vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header><h3>What Is GitHub? A Beginner’s Introduction to GitHub</h3></header>
+  <div id="main">
+    <article>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. To understand exactly what GitHub is, you need to know two connected principles:
+        <ul>
+            <li>Version control</li>
+            <li>Git</li>
+        </ul>
+        In this article, we’ll first explain those two principles. Then, we’ll dig into more about GitHub and how you can actually use GitHub to work with WordPress and/or Kinsta.
+        <h1>What Is Version Control?</h1>
+        Version control helps developers track and manage changes to a software project’s code. As a software project grows, version control becomes essential. Take WordPress…At this point, WordPress is a pretty big project. If a core developer wanted to work on one specific part of the WordPress codebase, it wouldn’t be safe or efficient to have them directly edit the “official” source code.
+        <h1>What Is Git?</h1>
+        Git is a specific open-source version control system created by Linus Torvalds in 2005. Specifically, Git is a distributed version control system, which means that the entire codebase and history is available on every developer’s computer, which allows for easy branching and merging.
+    </article>
+    <nav><h3>How do I Use a GitHub?</h3><a href="https://devmountain.com/blog/what-is-github-and-how-do-you-use-it/">Click Here</a></nav>
+    <aside><h3>So What Is GitHub, Then?</h3>
+        <p>GitHub is a for-profit company that offers a cloud-based Git repository hosting service. Essentially, it makes it a lot easier for individuals and teams to use Git for version control and collaboration.</p>
+        <p>GitHub’s interface is user-friendly enough so even novice coders can take advantage of Git. Without GitHub, using Git generally requires a bit more technical savvy and use of the command line.</p>
+        GitHub is so user-friendly, though, that some people even use GitHub to manage other types of projects – like writing books.
+        </aside>
+  </div>
+  <footer>For more information <a href="https://kinsta.com/knowledgebase/what-is-github/">Click Here</a></footer>
+</body>
